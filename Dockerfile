@@ -16,7 +16,7 @@ RUN apk update \
  && apk add --no-cache --virtual .build-deps \
         build-base \
         ruby-dev gnupg \
- && apt-get install libmysqlclient-dev
+ && apt-get install libmysqlclient-dev \
  && echo 'gem: --no-document' >> /etc/gemrc \
  && gem install oj -v 3.3.10 \
  && gem install json -v 2.2.0 \
